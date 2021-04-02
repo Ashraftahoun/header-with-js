@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <img src="image/logo.jpg" alt="logo" class="logo">
+                <ul>
+                   <li><a href="#">home</a></li>
+                   <li><a href="#">menu</a></li>
+                   <li><a href="#">offer</a></li>
+                   <li><a href="#">contact</a></li>
+                   <li><a href="#">about</a></li>   
+                </ul>
+        </header>
+        <div class="content">
+            <div class="text">
+                <h2>restaurant <span>ashraf</span></h2>
+                <p>this is agreat restaurant it has every thing and the food is deligiuos and the survice is very good and the quilty is very heigh and it is very expensive one day i will have one </p>
+                <a href="#">view menu</a>
+            </div>
+                <div class="imgbox">
+                    <img src="image/food.jpg" alt="burger" class="imgfood">
+                </div>
+        </div>
+        <ul class="intc">
+            <li><img src="image/food.jpg" alt="" onclick="slider('image/food.jpg')"></li>
+            <li><img src="image/piza.jpg" alt="" onclick="slider('image/piza.jpg')"></li>
+            <li><img src="image/burger.jpg" alt="" onclick="slider('image/burger.jpg')"></li>
+            <li><img src="image/pexels-jill-wellington-257816.jpg" alt=""onclick="slider('image/pexels-jill-wellington-257816.jpg')"></li>
+            <li><img src="image/sand.jpg" alt="" onclick="slider('image/sand.jpg')"></li>
+        </ul>
+    </section>
+    <script>
+        function slider(anything){
+            document.querySelector('.imgfood').src=anything;
+        }
+    </script>
+</body>
+</html>
